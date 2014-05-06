@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_drawer_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/map_benzine"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <cl.gob.datos.bencinas.helpers.MultipleOrientationSlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        custom:content="@+id/content_c"
+        custom:handle="@+id/handle_c"
+        custom:orientation="top" >
+
+        <LinearLayout
+            android:id="@id/handle_c"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/handle_c_image"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="120dp"
+                android:background="@color/celeste_bencinas"
+                android:contentDescription="@+id/custom_background"
+                android:gravity="center_horizontal"
+                android:src="@drawable/arrow_down"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/content_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/celeste_bencinas"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/benzine_station_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="Seleccione el tipo de Bencina"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_buttons_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <Button
+                    android:id="@+id/btn_gasoline_93"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelgreen"
+                    android:tag="GAS_93"
+                    android:text="@string/detail_gasoline_93"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_gasoline_95"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelblack"
+                    android:tag="GAS_95"
+                    android:text="@string/detail_gasoline_95"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_gasoline_97"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelyelow"
+                    android:tag="GAS_97"
+                    android:text="@string/detail_gasoline_97"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_buttons_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp" >
+
+                <Button
+                    android:id="@+id/btn_invisible"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelgreen"
+                    android:text="@string/btn_llamar"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_diesel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelred"
+                    android:tag="DIESEL"
+                    android:text="@string/detail_diesel"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_kerosene"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3.0"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelblue"
+                    android:tag="KEROSENE"
+                    android:text="@string/detail_kerosene"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <Button
+                    android:id="@+id/btn_invisible2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/background_card"
+                    android:drawableTop="@drawable/fuelred"
+                    android:text="@string/btn_llamar"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- </FrameLayout> -->
+    </cl.gob.datos.bencinas.helpers.MultipleOrientationSlidingDrawer>
+
+</FrameLayout>

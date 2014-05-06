@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="10sp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/blue_shadow_side" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="2.0dip" >
+
+        <LinearLayout
+            android:id="@+id/detailBenzine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/benzine_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:drawableLeft="@drawable/bencinera_shell"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/benzine_station_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:drawableLeft="@drawable/ic_location_place"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/benzine_station_schedule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:drawableLeft="@drawable/ic_device_access_time"
+                android:gravity="center_vertical"
+                android:text="Abierto 24 HORAS"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.4" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    android:weightSum="0.4" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/rectangle"
+                        android:orientation="vertical"
+                        android:weightSum="0.4" >
+
+                        <LinearLayout
+                            android:id="@+id/gasoline93"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="4dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/detail_gasoline_93"
+                                    android:textAppearance="?android:textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/benzine_gas93_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/celeste_bencinas"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:contentDescription="@string/detail_btn"
+                                android:scaleType="fitXY"
+                                android:src="@android:color/darker_gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/gasoline95"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="4dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/detail_gasoline_95"
+                                    android:textAppearance="?android:textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/benzine_gas95_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/celeste_bencinas"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:layout_margin="2.0dip"
+                                android:contentDescription="@string/detail_btn"
+                                android:scaleType="fitXY"
+                                android:src="@android:color/darker_gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/gasoline97"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="4dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/detail_gasoline_97"
+                                    android:textAppearance="?android:textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/benzine_gas97_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/celeste_bencinas"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:layout_margin="2.0dip"
+                                android:contentDescription="@string/detail_btn"
+                                android:scaleType="fitXY"
+                                android:src="@android:color/darker_gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/disel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="4dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/detail_diesel"
+                                    android:textAppearance="?android:textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/disel_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/celeste_bencinas"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:layout_margin="2.0dip"
+                                android:contentDescription="@string/detail_btn"
+                                android:scaleType="fitXY"
+                                android:src="@android:color/darker_gray" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/kerosene"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="4dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/detail_kerosene"
+                                    android:textAppearance="?android:textAppearanceMedium" />
+
+                                <TextView
+                                    android:id="@+id/kerosene_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5.0dip"
+                                    android:layout_weight="0.5"
+                                    android:gravity="right"
+                                    android:text=""
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/celeste_bencinas"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/div_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:contentDescription="@string/detail_btn"
+                        android:scaleType="fitXY"
+                        android:src="@android:color/darker_gray"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/btn_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+
+                        <!-- style="@style/Widget.Sherlock.ActionButton" -->
+
+                        <Button
+                            android:id="@+id/btn_benzine_report"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_alerts_and_states_error"
+                            android:text="@string/btn_report"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                        <ImageView
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2.0dip"
+                            android:contentDescription="@string/detail_btn"
+                            android:scaleType="fitXY"
+                            android:src="@android:color/darker_gray" />
+
+                        <!-- style="@style/Widget.Sherlock.ActionButton" -->
+
+                        <Button
+                            android:id="@+id/btn_benzine_rout"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_location_directions"
+                            android:text="@string/btn_llevame"
+                            android:textAppearance="?android:textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/divider_phone"
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="2.0dip"
+                            android:contentDescription="@string/detail_btn"
+                            android:scaleType="fitXY"
+                            android:src="@android:color/darker_gray"
+                            android:visibility="gone" />
+
+                        <!-- style="@style/Widget.Sherlock.ActionButton" -->
+
+                        <Button
+                            android:id="@+id/btn_benzine_telefono"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:background="@android:color/transparent"
+                            android:drawableTop="@drawable/ic_device_access_call"
+                            android:text="@string/btn_llamar"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

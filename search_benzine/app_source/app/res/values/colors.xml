@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="color" name="common_signin_btn_dark_text_default">@*android:color/white</item>
+    <item type="color" name="common_signin_btn_dark_text_pressed">@*android:color/white</item>
+    <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
+    <item type="color" name="common_signin_btn_dark_text_focused">@*android:color/white</item>
+    <color name="common_signin_btn_light_text_default">#ff737373</color>
+    <item type="color" name="common_signin_btn_light_text_pressed">@*android:color/white</item>
+    <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
+    <color name="common_signin_btn_light_text_focused">#ff737373</color>
+    <color name="common_signin_btn_default_background">#ffdd4b39</color>
+    <color name="common_action_bar_splitter">#ffd2d2d2</color>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <item type="color" name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</item>
+    <item type="color" name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</item>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="solid_red">#ffff0000</color>
+    <color name="solid_blue">#ff0000ff</color>
+    <color name="solid_green">#ff00ff00</color>
+    <color name="solid_yellow">#ffffff00</color>
+    <color name="rojo">#ffff0000</color>
+    <color name="verde">#ff00ff00</color>
+    <color name="azul">#ff0000ff</color>
+    <color name="azul_ics_roboto">#ff177bbd</color>
+    <color name="azul_ics_honest">#ff33b5e5</color>
+    <color name="azul_ics_touched">#ff2d9fc9</color>
+    <color name="gris_ics_Tombstone">#ff4c4c4c</color>
+    <color name="gris_ics_7B_Pencil">#ff3c3c3d</color>
+    <color name="gris_ics_Not_Quite_Black">#ff303030</color>
+    <color name="gris_fondo_resultado">#ffd0d0d0</color>
+    <color name="gris_borde">#ff6d6d6d</color>
+    <color name="gris_fondo_formulario">#fff7fbf5</color>
+    <color name="gris_fondo_pantalla">#ffd0d0d0</color>
+    <color name="gris_fondo_pantalla_claro">#ffdadada</color>
+    <color name="negro_total">#ff000000</color>
+    <color name="blanco_fondo">#fffafafa</color>
+    <color name="blanco_total">#ffffffff</color>
+    <color name="azul_final">#ff2e9afe</color>
+    <color name="azul_fondo">#ff177bbd</color>
+    <color name="lista_color">#ff000000</color>
+    <color name="pressed_race">#cccf995f</color>
+    <color name="menu_lateral_text_selected">#ffffffff</color>
+    <color name="menu_lateral_text_unselected">#ff999999</color>
+    <color name="menu_lateral_background">#ff050505</color>
+    <color name="portada_link_text_color">#fffff02a</color>
+    <color name="menu_lateral_gradient_inicio">#ff333333</color>
+    <color name="color_linea">#ff777777</color>
+    <color name="color_linea_listas">#ff000000</color>
+    <color name="color_texto_boton">#ffffffff</color>
+    <color name="color_fondo_listas">#ff282828</color>
+    <color name="color_fondo_blanco">#ffffffff</color>
+    <color name="color_fondo_preferencias">#ffe1e1e1</color>
+    <color name="color_fondo_favoritos">#ffe1e1e1</color>
+    <color name="color_fondo_validacion">#ffe1e1e1</color>
+    <color name="color_fondo_transparente">#d9ffffff</color>
+    <color name="color_fondo_transparente2">#ffd9d9d9</color>
+    <color name="color_boton_desactivado">#994e4e4e</color>
+    <color name="color_seleccion_listas">#ff000000</color>
+    <color name="color_boton">#ffe19b5b</color>
+    <color name="color_boton_presionado">#ffcf7b3e</color>
+    <color name="color_boton_menu">#ff282828</color>
+    <color name="nd_lateral_item_default">#ff212121</color>
+    <color name="nd_lateral_divider">#ff000000</color>
+    <color name="nd_lateral_color_texto">#ffffffff</color>
+    <color name="nd_lateral_item_selected">#ff1e1e1e</color>
+    <color name="nd_lateral_item_pressed">#ff000000</color>
+    <color name="nd_lateral_text_gris">#ffa9a9a9</color>
+    <color name="nd_lateral_divider_menu">#ff282828</color>
+    <color name="negro1">#ff262626</color>
+    <color name="negro2">#ff232323</color>
+    <color name="gris1">#ffd9d9d9</color>
+    <color name="gris2">#ffa8a8a8</color>
+    <color name="gris3">#ff868686</color>
+    <color name="gris4">#ff4e4e4e</color>
+    <color name="naranja">#ffcf995f</color>
+    <color name="marron">#ffba7a44</color>
+    <color name="ruta">#ff06b7e4</color>
+    <color name="benzina_bg">#00bfd7</color>
+    <color name="celeste_bencinas">#00bfd7</color>
+
+</resources>

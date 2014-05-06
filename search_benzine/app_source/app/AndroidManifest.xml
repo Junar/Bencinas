@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.gob.datos.bencinas"
+    android:versionCode="3"
+    android:versionName="@string/version_number" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="cl.gob.datos.bencinas.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="cl.gob.datos.bencinas.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission  android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name="cl.gob.datos.bencinas.controller.AppController"
+        android:allowBackup="false"
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="cl.gob.datos.bencinas.fragment.InitialActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cl.gob.datos.bencinas.fragment.BenzineDetailActivity"
+            android:label="@string/benzine_detail"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="cl.gob.datos.bencinas.fragment.ComplaintBenzineActivity"
+            android:label="@string/benzine_complaint_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cl.gob.datos.bencinas.fragment.BenzineMainMapActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver android:name="cl.gob.datos.bencinas.fragment.AlarmReceiver" >
+        </receiver>
+        <receiver
+            android:name="cl.gob.datos.bencinas.fragment.BootReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="cl.gob.datos.bencinas.ALARM_CONFIGURATION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="" />
+    </application>
+
+</manifest>

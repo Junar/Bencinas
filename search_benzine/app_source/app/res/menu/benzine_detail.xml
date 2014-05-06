@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:junar="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_route"
+        android:icon="@drawable/ic_location_directions"
+        android:title="@string/btn_llevame"
+        junar:showAsAction="always"/>
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_social_share"
+        android:title="@string/menu_compartir"
+        junar:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        junar:showAsAction="ifRoom"/>
+
+</menu>
